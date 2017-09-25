@@ -49,6 +49,10 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 26403126272 # 25784303 * 1024 mmcblk0p54
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
+# Shims
+TARGET_LD_SHIM_LIBS_DEVICE := \
+/system/vendor/lib/libmmcamera_ppeiscore.so|libshim_camera.so
+
 # inherit from motorola msm8953-common
 -include device/motorola/msm8953-common/BoardConfigCommon.mk
 
