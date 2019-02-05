@@ -47,8 +47,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.qcom.mot_device.rc \
-    init.mmi.mot_device.rc
+    init.qcom_device.rc \
+    init.mmi_device.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
